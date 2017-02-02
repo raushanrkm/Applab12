@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+ inheritatecountervalue:number = 4;
+
+ counterChangeMethod($event){
+    //console.log($event);
+    this.inheritatecountervalue=$event;
+  }
 }
